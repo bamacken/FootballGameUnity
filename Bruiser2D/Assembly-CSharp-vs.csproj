@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_2;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_0;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -46,17 +46,19 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CircularMenu\ExampleScenes\Scripts\BackToMenuScript.cs" />
-     <Compile Include="Assets\CircularMenu\ExampleScenes\Scripts\ExampleStarterManager.cs" />
-     <Compile Include="Assets\CircularMenu\ExampleScenes\Scripts\HUDFPS.cs" />
-     <Compile Include="Assets\CircularMenu\ExampleScenes\Scripts\MenuCallbackExample.cs" />
-     <Compile Include="Assets\CircularMenu\ExampleScenes\Scripts\MoveScript.cs" />
-     <Compile Include="Assets\CircularMenu\ExampleScenes\Scripts\MultipleMenuExample.cs" />
-     <Compile Include="Assets\CircularMenu\ExampleScenes\Scripts\PlayerClick.cs" />
-     <Compile Include="Assets\CircularMenu\ExampleScenes\Scripts\RuntimeMenuModifierExample.cs" />
-     <Compile Include="Assets\CircularMenu\ExampleScenes\Scripts\SimpleMenuExample.cs" />
-     <Compile Include="Assets\CircularMenu\ExampleScenes\Scripts\Test.cs" />
-     <Compile Include="Assets\CircularMenu\Scripts\CircularMenu.cs" />
+     <Compile Include="Assets\GUI\Scripts\PresentationScreen.cs" />
+     <Compile Include="Assets\GUI\Scripts\TitleScreen.cs" />
+     <Compile Include="Assets\Scripts\CircularMenu\ExampleScenes\Scripts\BackToMenuScript.cs" />
+     <Compile Include="Assets\Scripts\CircularMenu\ExampleScenes\Scripts\ExampleStarterManager.cs" />
+     <Compile Include="Assets\Scripts\CircularMenu\ExampleScenes\Scripts\HUDFPS.cs" />
+     <Compile Include="Assets\Scripts\CircularMenu\ExampleScenes\Scripts\MenuCallbackExample.cs" />
+     <Compile Include="Assets\Scripts\CircularMenu\ExampleScenes\Scripts\MoveScript.cs" />
+     <Compile Include="Assets\Scripts\CircularMenu\ExampleScenes\Scripts\MultipleMenuExample.cs" />
+     <Compile Include="Assets\Scripts\CircularMenu\ExampleScenes\Scripts\PlayerClick.cs" />
+     <Compile Include="Assets\Scripts\CircularMenu\ExampleScenes\Scripts\RuntimeMenuModifierExample.cs" />
+     <Compile Include="Assets\Scripts\CircularMenu\ExampleScenes\Scripts\SimpleMenuExample.cs" />
+     <Compile Include="Assets\Scripts\CircularMenu\ExampleScenes\Scripts\Test.cs" />
+     <Compile Include="Assets\Scripts\CircularMenu\Scripts\CircularMenu.cs" />
      <Compile Include="Assets\Scripts\DefensivePlayers\CB1.cs" />
      <Compile Include="Assets\Scripts\DefensivePlayers\CB2.cs" />
      <Compile Include="Assets\Scripts\DefensivePlayers\DL1.cs" />
@@ -76,14 +78,14 @@
      <Compile Include="Assets\Scripts\OffensivePlays.cs" />
      <Compile Include="Assets\Scripts\Routes.cs" />
      <Compile Include="Assets\Scripts\StartGame.cs" />
-     <Compile Include="Assets\iTweenEditor\Examples\StartAndStopTween.cs" />
-     <Compile Include="Assets\iTweenEditor\Helper Classes\EventParamMappings.cs" />
-     <Compile Include="Assets\iTweenEditor\Helper Classes\Vector3OrTransform.cs" />
-     <Compile Include="Assets\iTweenEditor\Helper Classes\Vector3OrTransformArray.cs" />
-     <Compile Include="Assets\iTweenEditor\iTween.cs" />
-     <Compile Include="Assets\iTweenEditor\iTweenEvent.cs" />
-     <Compile Include="Assets\iTweenEditor\iTweenPath.cs" />
-     <None Include="Assets\iTweenEditor\README.txt" />
+     <Compile Include="Assets\Scripts\iTweenEditor\Examples\StartAndStopTween.cs" />
+     <Compile Include="Assets\Scripts\iTweenEditor\Helper Classes\EventParamMappings.cs" />
+     <Compile Include="Assets\Scripts\iTweenEditor\Helper Classes\Vector3OrTransform.cs" />
+     <Compile Include="Assets\Scripts\iTweenEditor\Helper Classes\Vector3OrTransformArray.cs" />
+     <Compile Include="Assets\Scripts\iTweenEditor\iTween.cs" />
+     <Compile Include="Assets\Scripts\iTweenEditor\iTweenEvent.cs" />
+     <Compile Include="Assets\Scripts\iTweenEditor\iTweenPath.cs" />
+     <None Include="Assets\Scripts\iTweenEditor\README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

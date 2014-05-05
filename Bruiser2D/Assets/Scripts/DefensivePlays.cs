@@ -12,7 +12,9 @@ public class DefensivePlays : MonoBehaviour
 	{
 		fourthree,
 		threefour,
-		dime
+		dime,
+		quarter,
+		nickel,
 	}
 	
 	public enum Routes

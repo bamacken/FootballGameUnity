@@ -3,6 +3,7 @@ using UnityEditor;
 using System.Collections;
 using System.Reflection;
 
+
 [CustomEditor(typeof(CircularMenu))]
 public class CircularMenuEditor : Editor
 {
@@ -68,7 +69,7 @@ public class CircularMenuEditor : Editor
         _target.showActivationButton = EditorGUILayout.BeginToggleGroup("Use activation button", _target.showActivationButton);
         if (_target.showActivationButton)
         {
-            ShowCircularButtonGUI(_target.activationButton);
+            ShowCircularButtonGUI(_target.activationButton,true,true);
         }
         EditorGUILayout.EndToggleGroup();
         
@@ -79,7 +80,7 @@ public class CircularMenuEditor : Editor
         if (_target.showCentralButton)
         {
             _target.centralButtonHideMenu = EditorGUILayout.Toggle("Central button hide menu", _target.centralButtonHideMenu);
-            ShowCircularButtonGUI(_target.centralButton);
+            ShowCircularButtonGUI(_target.centralButton,true,true);
         }
         EditorGUILayout.EndToggleGroup();
         
@@ -184,7 +185,7 @@ public class CircularMenuEditor : Editor
             EditorGUI.indentLevel = 2;
             for (int i = 0; i < _part.buttonList.Count; i++)
             {
-                ShowCircularButtonGUI(_part.buttonList[i]);
+                ShowCircularButtonGUI(_part.buttonList[i],true,true);
                 if (_part.buttonList[i].showInEditor)
                 {
                     EditorGUILayout.BeginHorizontal();
@@ -217,9 +218,10 @@ public class CircularMenuEditor : Editor
     /// Function used to draw a cicular button gui
     /// </summary>
     /// <param name="_btn"></param>
-    private void ShowCircularButtonGUI(CircularMenuButton _btn, bool showElementTocall = true, bool showTextures = true)
+    private void ShowCircularButtonGUI(CircularMenuButton _btn, bool showElementTocall, bool showTextures)
     {
-
+		showElementTocall = true;
+		showTextures = true;
         _btn.showInEditor = EditorGUILayout.Foldout(_btn.showInEditor, _btn.name);
         if (_btn.showInEditor)
         {

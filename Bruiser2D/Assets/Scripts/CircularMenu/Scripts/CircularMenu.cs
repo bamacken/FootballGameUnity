@@ -268,8 +268,9 @@ public class CircularMenu : MonoBehaviour
     /// <summary>
     /// Function called to show the circular menu. It launch the transition if needed.
     /// </summary>
-    public void ShowMenu(bool _instantly = false)
+	public void ShowMenu(bool _instantly = false )
     {
+
         if (radiusTransition && useTransitions && !_instantly)
             actualCircleRadius = 0;
         else
@@ -306,7 +307,7 @@ public class CircularMenu : MonoBehaviour
     /// <summary>
     /// Function called to hide the circular menu. It launch the transition if needed.
     /// </summary>
-    public void HideMenu(bool _instantly = false)
+	public void HideMenu(bool _instantly = false)
     {
         if (actualState == EtatMenu.Active || actualState == EtatMenu.Show)
         {
