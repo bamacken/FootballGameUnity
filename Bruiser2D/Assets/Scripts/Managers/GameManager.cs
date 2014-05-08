@@ -48,16 +48,16 @@ public class GameManager : MonoBehaviour
 	}
 	void ChangePlayPlus(int j)
 	{
-		offensive.playNum = offensive.playNum++;
-		StartGame.startgame.refreshOffense();		
-		print(offensive.playNum);
+		//offensive.playNum = offensive.playNum++;
+		//StartGame.startgame.refreshOffense();		
+		//print(offensive.playNum);
 	}
 
 	void ChangePlayMinus(int j)
 	{
-		offensive.playNum = offensive.playNum--;
-		StartGame.startgame.refreshOffense();
-		print(offensive.playNum);
+		//offensive.playNum = offensive.playNum--;
+		//StartGame.startgame.refreshOffense();
+		//print(offensive.playNum);
 	}
 	
 	void changeFormationPlus()
