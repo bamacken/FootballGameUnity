@@ -19,7 +19,7 @@ public class TitleScreen : MonoBehaviour{
 		iTween.ScaleFrom(splatTexture,iTween.Hash("scale",new Vector3(2,2,0),"time",.6));
 		iTween.FadeFrom(titleTextBlock,iTween.Hash("alpha",0,"time",.8,"delay",.4));
 		iTween.MoveFrom(titleText,iTween.Hash("x",-.8,"time",.8,"delay",.5));
-		iTween.MoveFrom(onePlayerButton,iTween.Hash("y",-.5,"delay",1.4));
+		iTween.MoveFrom(onePlayerButton,iTween.Hash("y",-.5,"delay",1.5));
 		iTween.MoveFrom(twoPlayerButton,iTween.Hash("y",-.5,"delay",1.5));
 	}
 	

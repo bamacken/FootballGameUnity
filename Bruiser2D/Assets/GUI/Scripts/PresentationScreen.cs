@@ -11,7 +11,7 @@ public class PresentationScreen : MonoBehaviour{
 	//You could animate each GUITexture's Pixel Inset rect through iTween's ValueTo as well but this way is easier:
 	void OnEnable(){
 		//Reset (only needed since this example loops):
-		iTweenLogoGT.transform.position=new Vector3(.5f,.5f,.5f);
+		iTweenLogoGT.transform.position=new Vector3(.5f,.7f,.5f);
 		presentsTextGT.transform.position=new Vector3(.5f,.2f,.5f);
 		whiteDiagonalGradient.guiTexture.color=new Color(.5f,.5f,.5f,.5f);
 		
