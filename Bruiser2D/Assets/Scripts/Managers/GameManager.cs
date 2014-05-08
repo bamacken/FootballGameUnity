@@ -46,6 +46,17 @@ public class GameManager : MonoBehaviour
 		ballPostion = new Vector3(0,0,0);
 		time = 0.0f;
 	}
+	void exitGame()
+	{
+		Application.Quit();
+		System.Diagnostics.Process.GetCurrentProcess().Kill();
+	}
+
+	void goMenu()
+	{
+		Application.LoadLevel("Menu");
+	}
+
 	void ChangePlayPlus(int j)
 	{
 		//offensive.playNum = offensive.playNum++;
